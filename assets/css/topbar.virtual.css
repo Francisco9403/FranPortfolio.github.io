@@ -10,7 +10,7 @@
   padding: 10px 30px;
   background-color: rgba(116, 116, 116, 0.15);
   color: #747474;
-  font-size: 14px;
+  font-size: 30px;
   border-radius: 40px;
 }
 
@@ -660,3 +660,16 @@
 .theme-purple .post-grid .post-category {
   color: #6f42c1;
 }
+
+
+
+  .git a {
+    text-decoration: none !important; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del texto del elemento padre */
+  }
+  
+  /* Estilo del enlace cuando se pasa el cursor sobre él */
+  .git a:hover {
+    color: rgb(48, 83, 197); /* Cambia el color del texto a rojo al pasar el cursor */
+  }
+
