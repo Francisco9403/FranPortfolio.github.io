@@ -724,3 +724,26 @@
   .navbar-toggler-icon {
     background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="%23fff" stroke-width="2" d="M5 7h20M5 15h20M5 23h20" /%3E%3C/svg%3E'); /* Icono de alternar en blanco */
   }
+
+  
+  .footer-info, float-lg-right, list-unstyled {
+    text-align: center;
+  }
+
+  .divider {
+    margin: 0 auto;
+  }
+
+
+  .btn-theme-outline {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+  
+  .btn-theme-outline a {
+    color: inherit;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+  }
