@@ -754,3 +754,7 @@
 
   
 }
+
+.img-place img {
+  margin-top: -80px; /* Ajusta este valor según sea necesario */
+}
