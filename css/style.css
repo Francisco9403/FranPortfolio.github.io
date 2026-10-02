@@ -282,13 +282,20 @@ h1, h2, h3, h4, h5 {
     gap: 80px;
     align-items: start;
 }
-@media (max-width: 992px) {
+/* Esto aplica por defecto (para PC) */
 .about-img {
     position: sticky;
-    top: 120px; /* La distancia desde el menú superior */
-    height: max-content; /* Esencial para que el sticky funcione en CSS Grid */
+    top: 120px; 
+    height: max-content; 
     z-index: 10;
 }
+
+/* Esto pisa la regla anterior SOLAMENTE en celulares */
+@media (max-width: 992px) {
+    .about-img {
+        position: static; /* Esto desactiva el efecto pegajoso */
+        height: auto;
+    }
 }
 
 .img-wrapper {
