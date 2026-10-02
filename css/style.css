@@ -282,20 +282,20 @@ h1, h2, h3, h4, h5 {
     gap: 80px;
     align-items: start;
 }
-
+@media (max-width: 992px) {
 .about-img {
     position: sticky;
     top: 120px; /* La distancia desde el menú superior */
     height: max-content; /* Esencial para que el sticky funcione en CSS Grid */
     z-index: 10;
 }
+}
 
-@media (max-width: 992px) {
 .img-wrapper {
     position: relative;
     padding: 10px;
 }
-}
+
 
 .img-wrapper img {
     width: 100%;
