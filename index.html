@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Francisco Martinez | Full Stack Developer</title>
-  <meta name="description" content="Portfolio of Francisco Martinez, a Web Designer & Developer based in Argentina.">
+  <title>Francisco Martinez | Software Engineer & QA Automation</title>
+  <meta name="description" content="Portfolio de Francisco Martinez, Ingeniero en Informática, Full Stack Dev, Analista Funcional y QA Automation.">
 
-  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts: Inter para lectura, Fira Code para detalles técnicos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <nav class="navbar">
   <div class="container nav-container">
-    <a href="#" class="logo">Francisco<span>.dev</span></a>
+    <a href="#" class="logo">&lt;Francisco<span class="text-highlight">.dev</span>/&gt;</a>
     <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact" class="btn-primary">Contact</a></li>
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#about">Perfil</a></li>
+      <li><a href="#resume">Trayectoria</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact" class="btn-primary-small">Contacto</a></li>
     </ul>
     <div class="hamburger">
       <i class="fas fa-bars"></i>
@@ -28,318 +38,407 @@
 </nav>
 
 <header id="home" class="hero">
-  <div class="overlay"></div>
-  <div class="container hero-content">
-    <span class="greeting">Hello, I'm</span>
+  <!-- Efecto de luces de fondo -->
+  <div class="glow-bg glow-1"></div>
+  <div class="glow-bg glow-2"></div>
+
+  <div class="container hero-content" data-aos="fade-up" data-aos-duration="1000">
+    <div class="badge">Disponible para nuevos desafíos</div>
+    <h4>Hola, soy</h4>
     <h1>Luis Francisco Martínez</h1>
-    <h2>Software Developer & <span class="text-highlight">QA Engineer</span></h2>
-    <p>Systems Analyst & Computer Engineering student at UNNOBA. I specialize in the full software lifecycle: from building scalable code to ensuring quality through test automation.</p>
+    <h2><span id="typed-text" class="text-highlight"></span></h2>
+    <p class="hero-desc">Como Ingeniero en Informática, fusiono la creación de software robusto (Java, Spring Boot, React) con estrategias avanzadas de QA Automation y RPA (UiPath). Construyo soluciones que escalan y aseguro su calidad mediante arquitecturas de pruebas sólidas y pipelines CI/CD eficientes.</p>
     <div class="hero-btns">
-      <a href="#projects" class="btn">View My Work</a>
-      <a href="https://drive.google.com/file/d/1GcSdqYhcAa-TcKVnQKZRyNkg3l5g02lp/view?usp=sharing" target="_blank" class="btn btn-outline">Download Resume</a>
+      <a href="#projects" class="btn">Explorar Proyectos <i class="fas fa-arrow-right"></i></a>
+      <a href="assets/CV_Francisco_Martinez.pdf" target="_blank" class="btn btn-outline">Descargar CV <i class="fas fa-download"></i></a>
     </div>
   </div>
 </header>
 
 <section id="about" class="section">
   <div class="container about-container">
-    <div class="about-img reveal">
-      <img src="assets/img/Fotomia2.jpeg" alt="Francisco Martinez">
+    <div class="about-img" data-aos="fade-right" data-aos-duration="1000">
+      <div class="img-wrapper glass-panel">
+        <img src="assets/img/Fotomia2.jpeg" alt="Francisco Martinez">
+        <div class="experience-badge">
+          <span class="number">Full</span>
+          <span class="text">Stack &<br>QA Eng.</span>
+        </div>
+      </div>
     </div>
-    <div class="about-text reveal">
-      <h3 class="section-title">About Me</h3>
-      <p>I hold a degree as a <strong>Systems Analyst</strong> and I am currently completing my <strong>Computer Engineering</strong> degree at UNNOBA (5th year).</p>
-      <p>My professional approach is versatile: I enjoy the entire development lifecycle. I have experience building robust software in <strong>Java and Python</strong>, but I also possess a strong background in <strong>Quality Engineering</strong>, designing automated test frameworks and CI/CD pipelines.</p>
-      <p>I consider myself highly adaptable, constantly learning new tools to optimize development and testing processes.</p>
+
+    <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
+      <h3 class="section-title">Perfil Técnico & Analítico</h3>
+      <p>Graduado como <strong>Ingeniero en Informática</strong> y <strong>Analista de Sistemas</strong> en la UNNOBA, actualmente radicado en Junín, Buenos Aires. Mi perfil es altamente versátil, cubriendo todo el ciclo de vida del software.</p>
+      <p>Poseo un fuerte enfoque funcional para el relevamiento de requerimientos (Scrum, Jira, Historias de Usuario) que me permite traducir necesidades de negocio complejas en arquitecturas eficientes. Tengo amplia experiencia garantizando la integridad de sistemas de alta demanda a través de automatización (UiPath, Selenide, Rest Assured) y despliegues en la nube.</p>
 
       <div class="skills-grid">
-        <div class="skill-item"><i class="fas fa-code"></i> Python, Java, C++, Go</div>
-        <div class="skill-item"><i class="fas fa-robot"></i> Selenide, Rest Assured, Postman</div>
-        <div class="skill-item"><i class="fab fa-angular"></i> Angular, HTML, Bootstrap</div>
-        <div class="skill-item"><i class="fas fa-cloud"></i> AWS, Azure, Docker, K8s</div>
-        <div class="skill-item"><i class="fas fa-stream"></i> Kafka, Kinesis, PostgreSQL</div>
-        <div class="skill-item"><i class="fas fa-infinity"></i> CI/CD Pipelines, Grafana</div>
+        <div class="skill-item"><i class="fas fa-code"></i> <span>Java, Python, C++, Go</span></div>
+        <div class="skill-item"><i class="fas fa-robot"></i> <span>UiPath, Selenide, Appium</span></div>
+        <div class="skill-item"><i class="fas fa-vial"></i> <span>Rest Assured, Cucumber</span></div>
+        <div class="skill-item"><i class="fab fa-react"></i> <span>React, Next.js, Angular</span></div>
+        <div class="skill-item"><i class="fas fa-server"></i> <span>Spring Boot, PostgreSQL, Kafka</span></div>
+        <div class="skill-item"><i class="fas fa-cloud"></i> <span>Docker, K8s, AWS, Azure</span></div>
       </div>
     </div>
   </div>
-
 </section>
 
-<section id="resume" class="section bg-light">
+<section id="resume" class="section bg-alt">
   <div class="container">
-    <div class="section-header text-center reveal">
-      <h3 class="section-title">My Journey</h3>
-      <div class="separator-line"></div>
+    <div class="section-header text-center" data-aos="fade-up">
+      <h3 class="section-title">Trayectoria & Experiencia</h3>
+      <p class="section-subtitle">Evolución profesional y académica orientada a la calidad y la escalabilidad.</p>
     </div>
 
     <div class="resume-grid">
-      <div class="resume-column reveal">
-        <h4 class="resume-title"><i class="fas fa-briefcase"></i> Experience</h4>
+      <div class="resume-column" data-aos="fade-up" data-aos-delay="100">
+        <h4 class="resume-title"><i class="fas fa-briefcase"></i> Experiencia Profesional</h4>
 
-        <div class="resume-item">
-          <span class="resume-date">2024 - 2025</span>
-          <h5>QA Automation Engineer</h5>
-          <p class="institution">Tech Company </p>
-          <p>Designed and maintained CI/CD pipelines and automated testing frameworks. Worked with Docker, Grafana, and cloud modules.</p>
+        <div class="resume-item glass-card hover-glow">
+          <div class="resume-header">
+            <div>
+              <h5>QA Automation & Process Automation Specialist</h5>
+              <p class="institution">Edit Software</p>
+            </div>
+            <span class="resume-date">Nov 2025 - Feb 2026</span>
+          </div>
+          <ul class="resume-list">
+            <li>Diseño e implementación de frameworks de automatización orientados a objetos (Java/Go) para validar flujos críticos.</li>
+            <li>Orquestación de pruebas aisladas en contenedores Docker y Selenium Grid, integradas en pipelines CI/CD (GitHub Actions/GitLab).</li>
+            <li>Definición de SLAs y ejecución de pruebas de stress/performance utilizando Gatling en entornos de alta concurrencia.</li>
+          </ul>
         </div>
 
-        <div class="resume-item">
-          <span class="resume-date">2024</span>
-          <h5>Freelance Developer</h5>
-          <p class="institution">Accounting System</p>
-          <p>Co-developed a full-stack inventory and accounting system. Managed database integration and backend logic.</p>
+        <div class="resume-item glass-card hover-glow">
+          <div class="resume-header">
+            <div>
+              <h5>Quality Engineer & Data Quality Analyst</h5>
+              <p class="institution">Clarolab</p>
+            </div>
+            <span class="resume-date">Dic 2024 - Mar 2025</span>
+          </div>
+          <ul class="resume-list">
+            <li>Análisis y validación de arquitecturas de microservicios y APIs REST complejas utilizando Postman.</li>
+            <li>Monitoreo de streaming de datos en tiempo real (Kafka) y validación de servicios cloud (AWS, Azure).</li>
+            <li>Implementación de metodología Shift-Left Testing, colaborando estrechamente con el equipo de desarrollo backend.</li>
+          </ul>
         </div>
 
-        <div class="resume-item">
-          <span class="resume-date">2023</span>
-          <h5>Full Stack Developer</h5>
-          <p class="institution">Spanish Society Project</p>
-          <p>Developed event management features and user interfaces using Java and Spring Boot.</p>
-        </div>
-
-        <div class="resume-item">
+        <div class="resume-item glass-card hover-glow">
+          <div class="resume-header">
+            <div>
+              <h5>Software Engineer & Automation Specialist</h5>
+              <p class="institution">Proyectos Freelance</p>
+            </div>
+            <span class="resume-date">Jul 2023 - Dic 2024</span>
+          </div>
+          <ul class="resume-list">
+            <li>Desarrollo End-to-End de sistemas integrales de gestión empresarial (ERP) para PyMEs.</li>
+            <li>Arquitectura backend con Spring Boot y PostgreSQL, garantizando la integridad transaccional de ventas y stock.</li>
+            <li>Creación de interfaces de usuario modernas y responsivas consumiendo APIs RESTful mediante React, Next.js y Angular.</li>
+          </ul>
         </div>
       </div>
 
-      <div class="resume-column reveal">
-        <h4 class="resume-title"><i class="fas fa-graduation-cap"></i> Education</h4>
+      <div class="resume-column" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="resume-title"><i class="fas fa-graduation-cap"></i> Formación Académica</h4>
 
-        <div class="resume-item">
-          <span class="resume-date">2021 - Present</span>
-          <h5>Computer Engineering</h5>
-          <p class="institution">UNNOBA</p>
-          <p>Currently in the 5th year. Focused on Algorithms, Software Architecture, and Data Processing.</p>
+        <div class="resume-item glass-card hover-glow">
+          <div class="resume-header">
+            <div>
+              <h5>Ingeniería en Informática</h5>
+              <p class="institution">UNNOBA</p>
+            </div>
+            <span class="resume-badge">Graduado</span>
+          </div>
+          <p class="resume-desc">Formación intensiva que me otorgó una sólida base matemática y lógica para la resolución de problemas algorítmicos complejos, diseño de arquitecturas de software y automatización a nivel corporativo.</p>
         </div>
 
-        <div class="resume-item">
-          <span class="resume-date">2024</span>
-          <h5>Systems Analyst</h5>
-          <p class="institution">UNNOBA</p>
-          <p>Degree Obtained. Strong foundation in systems analysis and design.</p>
+        <div class="resume-item glass-card hover-glow">
+          <div class="resume-header">
+            <div>
+              <h5>Analista de Sistemas</h5>
+              <p class="institution">UNNOBA</p>
+            </div>
+            <span class="resume-badge">Graduado</span>
+          </div>
+          <p class="resume-desc">Especialización en el levantamiento de requerimientos, ingeniería de software, bases de datos y aplicación de metodologías ágiles (Scrum) para la gestión integral de proyectos.</p>
         </div>
 
-        <div class="resume-item">
-          <span class="resume-date">2023</span>
-          <h5>English Language</h5>
-          <p class="institution">Language Institute</p>
-          <p>Continuous improvement in technical communication and reading.</p>
-        </div>
-
-        <div class="resume-item">
+        <div class="resume-item glass-card hover-glow">
+          <div class="resume-header">
+            <div>
+              <h5>Licenciatura en Sistemas</h5>
+              <p class="institution">UNNOBA</p>
+            </div>
+            <span class="resume-date">2021 - Actualidad</span>
+          </div>
+          <p class="resume-desc">Profundización académica enfocada en el procesamiento de datos masivos, metodologías de investigación aplicada y optimización de recursos tecnológicos.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="projects" class="section bg-light">
+<section id="projects" class="section">
   <div class="container">
-    <h3 class="section-title text-center reveal">Featured Projects</h3>
+    <div class="section-header text-center" data-aos="fade-up">
+      <h3 class="section-title">Portfolio Destacado</h3>
+      <p class="section-subtitle">Casos de estudio reales abarcando Desarrollo Full Stack, Infraestructura QA y Automatización RPA.</p>
+    </div>
+
     <div class="projects-grid">
 
-      <article class="project-card reveal">
-        <div class="project-img">
+      <!-- Tarjeta 1 -->
+      <article class="project-card glass-card hover-glow" data-aos="fade-up">
+        <div class="project-img-wrapper">
           <img src="assets/img/work/saucedemo-console.jpg" alt="Test Automation Framework Console">
+          <div class="tech-tags">
+            <span>Java</span><span>Selenide</span><span>Docker</span>
+          </div>
         </div>
         <div class="project-info">
-          <h4>Test Automation Framework UI</h4>
-          <p class="tech-stack">Java • Selenide • Docker • Selenium Grid</p>
-          <p>
-            Scalable E2E testing framework for e-commerce using <strong>Page Object Model</strong>.
-            Runs in <strong>Dockerized Containers</strong> using Selenium Grid for isolated execution.
-            Includes explicit waits, business logic validation, and Allure reporting.
-          </p>
+          <h4>Arquitectura QA E2E (UI)</h4>
+          <p>Framework de testing End-to-End altamente escalable estructurado bajo el patrón <strong>Page Object Model</strong>. Diseñado para ejecutarse de forma paralela y aislada mediante <strong>Selenium Grid dockerizado</strong>. Genera reportes interactivos automáticos (Allure) validando flujos críticos de e-commerce.</p>
           <div class="project-links">
-            <a href="https://github.com/francisco9403/SauceDemoAutomation" target="_blank">
-              <i class="fab fa-github"></i> Code
-            </a>
-
-            <a href="https://francisco9403.github.io/SauceDemoAutomation/" target="_blank" style="margin-left: 15px; color: #e63946; font-weight: bold;">
-              <i class="fas fa-desktop"></i> Live Report
-            </a>
+            <a href="https://github.com/francisco9403/SauceDemoAutomation" target="_blank" class="code-link"><i class="fab fa-github"></i> Código</a>
+            <a href="https://francisco9403.github.io/SauceDemoAutomation/" target="_blank" class="live-link"><i class="fas fa-external-link-alt"></i> Ver Reporte</a>
           </div>
         </div>
       </article>
 
-
-      <article class="project-card reveal">
-        <div class="project-img">
+      <!-- Tarjeta 2 -->
+      <article class="project-card glass-card hover-glow" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-img-wrapper">
           <img src="assets/img/work/RestAssuredAutomation.jpg" alt="REST API Automation Console">
+          <div class="tech-tags">
+            <span>Rest Assured</span><span>GitHub Actions</span><span>API</span>
+          </div>
         </div>
         <div class="project-info">
-          <h4>REST API Framework</h4>
-          <p class="tech-stack">Java • Rest Assured • Docker • Allure</p>
-          <p>
-            Backend testing framework covering full <strong>CRUD lifecycle</strong> using POJO Serialization.
-            Features <strong>Dockerized execution</strong> (runs in isolated containers), CI/CD pipelines via GitHub Actions,
-            and automated Allure reporting.
-          </p>
+          <h4>Framework Testing API REST</h4>
+          <p>Plataforma robusta para la validación del backend cubriendo todo el ciclo CRUD mediante serialización y deserialización de objetos (POJO). Integrado en un flujo de integración continua (CI/CD) con GitHub Actions para garantizar la calidad en cada commit antes del despliegue.</p>
           <div class="project-links">
-            <a href="https://github.com/francisco9403/RestAssuredAutomation" target="_blank">
-              <i class="fab fa-github"></i> Code
-            </a>
-
-            <a href="https://francisco9403.github.io/RestAssuredAutomation/" target="_blank" style="margin-left: 15px; color: #e63946; font-weight: bold;">
-              <i class="fas fa-chart-bar"></i> Live Report
-            </a>
+            <a href="https://github.com/francisco9403/RestAssuredAutomation" target="_blank" class="code-link"><i class="fab fa-github"></i> Código</a>
+            <a href="https://francisco9403.github.io/RestAssuredAutomation/" target="_blank" class="live-link"><i class="fas fa-external-link-alt"></i> Ver Reporte</a>
           </div>
         </div>
       </article>
 
-      <article class="project-card reveal">
-        <div class="project-img">
+      <!-- Tarjeta 3 -->
+      <article class="project-card glass-card hover-glow" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-img-wrapper">
           <img src="assets/img/work/gatling-report.png" alt="Gatling Performance Report">
+          <div class="tech-tags">
+            <span>Gatling</span><span>Maven</span><span>Performance</span>
+          </div>
         </div>
         <div class="project-info">
-          <h4>Performance Testing Framework</h4>
-          <p class="tech-stack">Java • Gatling • Maven</p>
-          <p>
-            Advanced load testing framework designed as <strong>"Performance as Code"</strong>.
-            Simulates realistic user journeys using <strong>CSV Data Feeders</strong> and correlation logic.
-            Integrates strict <strong>SLA Assertions</strong> (latency & success rate) to block failures in CI/CD.
-          </p>
+          <h4>Testing de Performance y Carga</h4>
+          <p>Implementación bajo el paradigma <strong>"Performance as Code"</strong>. Simulación avanzada de flujos de usuarios concurrentes inyectando datos masivos mediante CSV Feeders. Incluye aserciones estrictas de SLA (latencia, tasa de error) para bloquear pasos a producción deficientes.</p>
           <div class="project-links">
-            <a href="https://github.com/francisco9403/GatlingPerformanceFramework" target="_blank">
-              <i class="fab fa-github"></i> Code
-            </a>
-
-            <a href="https://francisco9403.github.io/GatlingPerformanceFramework/" target="_blank" style="margin-left: 15px; color: #e63946; font-weight: bold;">
-              <i class="fas fa-tachometer-alt"></i> Live Report
-            </a>
+            <a href="https://github.com/francisco9403/GatlingPerformanceFramework" target="_blank" class="code-link"><i class="fab fa-github"></i> Código</a>
+            <a href="https://francisco9403.github.io/GatlingPerformanceFramework/" target="_blank" class="live-link"><i class="fas fa-external-link-alt"></i> Ver Reporte</a>
           </div>
         </div>
       </article>
 
-
-      <article class="project-card reveal">
-        <div class="project-img">
+      <!-- Tarjeta 4 -->
+      <article class="project-card glass-card hover-glow" data-aos="fade-up">
+        <div class="project-img-wrapper">
           <img src="assets/img/work/rpa-mercadolibre.jpg" alt="RPA MercadoLibre Automation">
+          <div class="tech-tags">
+            <span>UiPath</span><span>REFramework</span><span>RPA</span>
+          </div>
         </div>
         <div class="project-info">
-          <h4>MercadoLibre Price Validator</h4>
-          <p class="tech-stack">UiPath • REFramework • Orchestrator</p>
-          <p>End-to-end RPA bot using Dispatcher/Performer architecture. Automates price extraction with dynamic selectors and validates business rules against budgets.</p>
+          <h4>Robot RPA (Extracción Financiera)</h4>
+          <p>Automatización de procesos robóticos (RPA) End-to-End basada en la robusta arquitectura <strong>Dispatcher/Performer</strong>. El bot extrae dinámicamente datos de precios, gestiona excepciones, valida reglas de negocio complejas y reporta resultados utilizando UiPath Orchestrator.</p>
           <div class="project-links">
-            <a href="https://github.com/Francisco9403/Practica_REFramework_RPA" target="_blank"><i class="fab fa-github"></i> Code</a>
+            <a href="https://github.com/Francisco9403/Practica_REFramework_RPA" target="_blank" class="code-link"><i class="fab fa-github"></i> Código</a>
           </div>
         </div>
       </article>
 
-
-
-      <article class="project-card reveal">
-        <div class="project-img">
+      <!-- Tarjeta 5 -->
+      <article class="project-card glass-card hover-glow" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-img-wrapper">
           <img src="assets/img/work/GestorEventos.png" alt="Spanish Society Project">
+          <div class="tech-tags">
+            <span>Spring Boot</span><span>Microservicios</span><span>React</span>
+          </div>
         </div>
         <div class="project-info">
-          <h4>Event Management Platform</h4>
-          <p class="tech-stack">JAVA · SPRING BOOT · MICROSERVICES · REACT</p>
-          <p>Scalable full-stack platform for event management, built with a microservices architecture.
-            Implements service discovery, API Gateway, centralized configuration, and a modern React frontend to manage artists, events, and users.</p>
+          <h4>Plataforma SaaS de Eventos</h4>
+          <p>Desarrollo Full Stack basado en arquitectura de microservicios. Cuenta con Service Discovery, API Gateway para enrutamiento seguro y configuración centralizada. El frontend, construido en React, ofrece una experiencia de usuario fluida para la gestión integral de artistas y tickets.</p>
           <div class="project-links">
-            <a href="https://github.com/Francisco9403/FinalPDYC" target="_blank"><i class="fab fa-github"></i> Code</a>
+            <a href="https://github.com/Francisco9403/FinalPDYC" target="_blank" class="code-link"><i class="fab fa-github"></i> Código</a>
           </div>
         </div>
       </article>
 
-      <article class="project-card reveal">
-        <div class="project-img">
-          <img src="assets/img/work/work-2.jpg" alt="Accounting System">
+      <!-- Tarjeta 6 -->
+      <article class="project-card glass-card hover-glow" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-img-wrapper">
+          <img src="assets/img/work/work-2.jpg" alt="Pymes Web Application">
+          <div class="tech-tags">
+            <span>Next.js</span><span>Java</span><span>ERP</span>
+          </div>
         </div>
         <div class="project-info">
-          <h4>Accounting System</h4>
-          <p class="tech-stack">Python • Django • PostgreSQL</p>
-          <p>Sales tracking and accounting entries management system.</p>
+          <h4>Aplicación Web Corporativa (PyMEs)</h4>
+          <p>Sistema modular diseñado para la gestión operativa de PyMEs. Combina la solidez transaccional de un backend en Java/Spring Boot con la velocidad y optimización SEO de un frontend en Next.js (Server-Side Rendering), logrando una solución escalable de nivel empresarial.</p>
           <div class="project-links">
-            <a href="https://github.com/Francisco9403/SistemaContable" target="_blank"><i class="fab fa-github"></i> Code</a>
+            <a href="https://github.com/Francisco9403/SistemaContable" target="_blank" class="code-link"><i class="fab fa-github"></i> Código</a>
           </div>
         </div>
       </article>
 
-      <article class="project-card reveal">
-        <div class="project-img">
-          <img src="assets/img/work/work-3.jpg" alt="Inventory Manager">
-        </div>
-        <div class="project-info">
-          <h4>Inventory Manager</h4>
-          <p class="tech-stack">PHP • JS • MySQL</p>
-          <p>Inventory management with automatic alerts and reservations.</p>
-          <div class="project-links">
-            <a href="https://github.com/Francisco9403/SGI.git" target="_blank"><i class="fab fa-github"></i> Code</a>
-          </div>
-        </div>
-      </article>
 
-      <article class="project-card reveal">
-        <div class="project-img">
+      <!-- Tarjeta 7: Booking System -->
+      <article class="project-card glass-card hover-glow" data-aos="fade-up">
+        <div class="project-img-wrapper">
           <img src="assets/img/work/work-4.png" alt="Booking System">
+          <div class="tech-tags">
+            <span>Java</span><span>Spring Boot</span><span>Angular</span>
+          </div>
         </div>
         <div class="project-info">
-          <h4>Booking System</h4>
-          <p class="tech-stack">Java • Spring Boot • Angular</p>
-          <p>Online hotel reservation administration platform.</p>
+          <h4>Plataforma de Reservas (Booking)</h4>
+          <p>Sistema online integral para la administración de reservas hoteleras tipo e-commerce. Implementa gestión de disponibilidad en tiempo real, manejo de estados y panel de administración seguro para usuarios.</p>
           <div class="project-links">
-            <a href="https://github.com/ChanoChoca/AirbnbEcommerce" target="_blank"><i class="fab fa-github"></i> Code</a>
+            <a href="https://github.com/ChanoChoca/AirbnbEcommerce" target="_blank" class="code-link"><i class="fab fa-github"></i> Código</a>
           </div>
         </div>
       </article>
 
-      <article class="project-card reveal">
-        <div class="project-img">
-          <img src="assets/img/work/work-1.jpg" alt="Spanish Society Project">
+      <!-- Tarjeta 8: Inventory Manager -->
+      <article class="project-card glass-card hover-glow" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-img-wrapper">
+          <img src="assets/img/work/work-3.jpg" alt="Inventory Manager">
+          <div class="tech-tags">
+            <span>PHP</span><span>JavaScript</span><span>MySQL</span>
+          </div>
         </div>
         <div class="project-info">
-          <h4>Spanish Society System</h4>
-          <p class="tech-stack">Java • Spring Boot • Bootstrap</p>
-          <p>Event administration and user booking system for a cultural organization.</p>
+          <h4>Sistema de Gestión de Inventarios</h4>
+          <p>Solución orientada al control de stock, incorporando un motor de alertas automáticas para reabastecimiento y gestión de reservas. Optimiza el flujo operativo mediante un panel de control interactivo.</p>
           <div class="project-links">
-            <a href="https://github.com/Francisco9403/ProyectoSociedadEspa-ola" target="_blank"><i class="fab fa-github"></i> Code</a>
+            <a href="https://github.com/Francisco9403/SGI.git" target="_blank" class="code-link"><i class="fab fa-github"></i> Código</a>
           </div>
         </div>
       </article>
+
 
 
     </div>
   </div>
 </section>
 
-<section id="contact" class="section">
+<section id="contact" class="section bg-alt position-relative">
   <div class="container contact-wrapper">
-    <div class="contact-info reveal">
-      <h3 class="section-title">Let's Connect</h3>
-      <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
-      <ul class="contact-list">
-        <li><i class="fas fa-envelope"></i> martinezfrancisco934@gmail.com</li>
-        <li><i class="fas fa-map-marker-alt"></i> Junín, Buenos Aires, Argentina</li>
-      </ul>
-      <div class="social-icons">
-        <a href="https://github.com/Francisco9403"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/luis-francisco-martinez-a6ba57250/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com/FranM28453511"><i class="fab fa-twitter"></i></a>
+
+    <div class="contact-info" data-aos="fade-right">
+      <h3 class="section-title">¿Iniciamos un proyecto?</h3>
+      <p class="contact-desc">Mi enfoque analítico y técnico me permite aportar valor desde la concepción de la idea hasta su despliegue y automatización. Si buscas un perfil versátil para resolver problemas complejos, hablemos.</p>
+
+      <div class="contact-details">
+        <div class="contact-item">
+          <div class="icon-box"><i class="fas fa-envelope"></i></div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:martinezfrancisco934@gmail.com">martinezfrancisco934@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="icon-box"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <h4>Teléfono</h4>
+            <p>+54 9 236 452-7812</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4>Ubicación</h4>
+            <p>Junín, Buenos Aires, Argentina</p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="contact-form reveal">
+    <div class="contact-form glass-card" data-aos="fade-left">
       <form id="contactForm" action="https://formspree.io/f/xvgokjwv" method="POST">
+        <h4 style="margin-bottom: 20px; font-size: 1.5rem;">Enviame un mensaje</h4>
+
         <div class="form-group">
-          <input type="email" name="email" placeholder="Your Email" required>
+          <label>Nombre</label>
+          <input type="text" name="name" placeholder="John Doe" required>
         </div>
+
         <div class="form-group">
-          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <label>Email</label>
+          <input type="email" name="email" placeholder="ejemplo@correo.com" required>
         </div>
-        <button type="submit" class="btn btn-full">Send Message</button>
-        <p id="form-status"></p>
+
+        <div class="form-group">
+          <label>Mensaje</label>
+          <textarea name="message" rows="4" placeholder="¿En qué puedo ayudarte?" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-full">
+          Enviar Mensaje <i class="fas fa-paper-plane"></i>
+        </button>
       </form>
     </div>
+
   </div>
 </section>
 
-<footer>
-  <div class="container">
-    <p>&copy; 2026 Francisco Martinez. Built with HTML, CSS & Vanilla JS.</p>
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <div class="footer-col brand-col">
+      <a href="#" class="logo">&lt;Francisco<span class="text-highlight">.dev</span>/&gt;</a>
+      <p>Construyendo software escalable, asegurando la calidad integral y automatizando el futuro corporativo.</p>
+    </div>
+
+    <div class="footer-col links-col">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Sobre Mí</a></li>
+        <li><a href="#resume">Experiencia</a></li>
+        <li><a href="#projects">Portfolio</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col social-col">
+      <h4>Conectemos</h4>
+      <div class="footer-socials">
+        <a href="https://github.com/Francisco9403" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/luis-francisco-martinez-a6ba57250/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom container">
+    <p>&copy; 2026 Luis Francisco Martínez. Todos los derechos reservados. Diseñado sin frameworks pesados.</p>
   </div>
 </footer>
 
-<script src="script.js"></script>
+<!-- Librerías Externas -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>
