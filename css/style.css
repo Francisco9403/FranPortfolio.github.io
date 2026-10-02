@@ -280,7 +280,14 @@ h1, h2, h3, h4, h5 {
     display: grid;
     grid-template-columns: 5fr 7fr;
     gap: 80px;
-    align-items: center;
+    align-items: start;
+}
+
+.about-img {
+    position: sticky;
+    top: 120px; /* La distancia desde el menú superior */
+    height: max-content; /* Esencial para que el sticky funcione en CSS Grid */
+    z-index: 10;
 }
 
 .img-wrapper {
